@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "local-secret-scanner"
+version = "1.0.0"
+description = "A dependency-free, local-only secret scanner for code repositories"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+
+[project.scripts]
+secret-scan = "secret_scanner:main"
+
